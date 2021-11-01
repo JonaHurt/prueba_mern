@@ -117,6 +117,25 @@ export const Register = () => {
             </Form.Item>
 
             <Form.Item
+                label="apellido"
+                name="apellido"
+                rules={[
+                {
+                    required: true,
+                    message: 'Ingresa el apellido',
+                },
+
+                {
+                  min: 3,
+                  message: 'MInimo de caracteres 3',
+                },
+                
+                ]}
+            >
+            <Input />
+            </Form.Item>
+
+            <Form.Item
                 label="correo"
                 name="email"
                 rules={[

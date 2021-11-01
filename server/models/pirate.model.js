@@ -4,21 +4,25 @@ const PirateSchema = new mongoose.Schema({
     nombre: { 
         type: String,
         required: [true, 'El nombre es necesario'],
+        minlength: [1, ' debe tener al menos 1 caracteres'],
        
     },
     image: { 
         type: String,
-        required: [true, 'El nombre es necesario']
+        required: [true, 'El nombre es necesario'],
+        minlength: [1, ' debe tener al menos 1 caracteres'],
         
     },
     chest: { 
         type: Number,
         required: [true, 'cantidad es necesaria'],
+        minlength: [1, ' debe tener al menos 1 caracteres'],
         
     },
     type: {
         type: String,
         required: [true, 'El tipo es necesario'],
+        minlength: [1, ' debe tener al menos 1 caracteres'],
     },
     leg: {
         type: Boolean,
